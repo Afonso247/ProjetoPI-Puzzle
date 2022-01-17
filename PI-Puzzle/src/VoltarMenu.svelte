@@ -1,0 +1,37 @@
+<script>
+	import { trocarStateDoJogo } from './State.js'
+</script>
+
+<style>
+	button{
+    padding-left: 0;
+    padding-right: 0;
+	margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #C0C0C0;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 42px;
+    border: 2px solid red transparent;
+    box-shadow: 0 -5px 4px #FFF, 0 -5px 20px #ff8000, 0 -5px 40px #F00;
+    width: 25%;
+    outline: none;
+}
+
+button:hover {
+    z-index: 10;
+    opacity: 0.9;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px 3px white;
+}
+</style>
+
+<button type="button">
+	<div class="menu" on:click={() => trocarStateDoJogo("menu")}>
+		Voltar para o menu
+	</div>
+</button>
